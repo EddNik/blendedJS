@@ -1,1 +1,20 @@
-
+{
+  "name": "blendedjs",
+  "version": "1.0.0",
+  "description": "## JS base",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddNik/blendedJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EddNik/blendedJS/issues"
+  },
+  "homepage": "https://github.com/EddNik/blendedJS#readme"
+}
