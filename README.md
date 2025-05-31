@@ -1,6 +1,6 @@
-# goit-js-hw-04
+# blended lessons 
 
-## Об'єкти
+## JS base
 
 # Додатковий матеріал
 
