@@ -29,7 +29,7 @@
 - [VS Code snippets](https://marketplace.visualstudio.com/items?itemName=NicholasHsiang.vscode-javascript-snippet)
 ---
 
-## Ютуб канали
+#### Ютуб канали
 
 - [The Coding Train](https://www.youtube.com/@TheCodingTrain)
 - [Школа програмування](https://www.youtube.com/@ProgerSchool)
@@ -37,7 +37,7 @@
 
 ---
 
-## Плагіни VS-code
+#### Плагіни VS-code
 
 - Auto-Save on Window Change
 - Better Comments
