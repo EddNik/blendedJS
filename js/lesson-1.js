@@ -8,6 +8,8 @@
 // Підказка: prompt завжди повертає рядок (String), тому перед перевіркою
 // перетворіть значення на число за допомогою Number().
 
+// there are 3 variants to convert string to number after prompt:
+
 // const number = prompt('Please enter the number');
 // const number = Number(prompt('Please enter the number'));
 // const number = +prompt('Please enter the number');
@@ -18,6 +20,12 @@
 // } else {
 //   alert('Невірно');
 // }
+
+number = 10 ? alert('Вірно') : alert('Невірно');
+
+// another variant:
+
+alert(number === 10 ? 'Вірно' : 'Невірно');
 
 // alert()
 
@@ -48,6 +56,8 @@
 //   alert(`${min} входить в четверту чверть`);
 // }
 
+// another variant in strong order from min to max value:
+
 // if (min <= 15) {
 //   alert(`${min} входить в першу чверть`);
 // } else if (min <= 30) {
@@ -73,32 +83,32 @@
 // const num = +prompt('Enter number from 1 to 4');
 // let result;
 
-// switch (num) {
-//   // case '1':
-//   case 1:
-//     result = 'зима';
-//     break;
+switch (num) {
+  // case '1':   // якщо  prompt  не приводиться до числового типу
+  case 1:
+    result = 'зима';
+    break;
 
-//   // case '2':
-//   case 2:
-//     result = 'весна';
-//     break;
+  // case '2':
+  case 2:
+    result = 'весна';
+    break;
 
-//   // case '3':
-//   case 3:
-//     result = 'літо';
-//     break;
+  // case '3':
+  case 3:
+    result = 'літо';
+    break;
 
-//   // case '4':
-//   case 4:
-//     result = 'осінь';
-//     break;
+  // case '4':
+  case 4:
+    result = 'осінь';
+    break;
 
-//   default:
-//     console.log('Вибачте, але ви маєте ввести значення від 1 до 4 включно');
-// }
+  default:
+    console.log('Вибачте, але ви маєте ввести значення від 1 до 4 включно');
+}
 
-// console.log(result);
+console.log(result);
 
 // Завдання 4:
 // Отримуйте від користувача число (кількість хвилин) через prompt
@@ -109,10 +119,10 @@
 
 // const minutesIn = prompt('Enter number minutes');
 
-// let hours;
-// let minutesOut;
-// hours = parseInt(minutesIn / 60);
-// hours = Math.floor(minutesIn / 60);
+// const hours;
+// const minutesOut;
+// hours = parseInt(minutesIn / 60);    // беремо цілу частину
+// hours = Math.floor(minutesIn / 60);  .. // беремо цілу частину це другий варіант
 // minutesOut = minutesIn % 60;
 // console.log(`${hours.toString().padStart(2, 0)}:${minutesOut.toString().padStart(2, 0)}`);
 
@@ -169,6 +179,12 @@ if (login === 'Адмін') {
 // і поверніть її з функції.
 
 // function getNumbers(min, max) {
+
+//раннє повернення це то що не повинно працювати
+if (typeof min !== 'number') {
+  return 'Not a number';
+}
+
 //   let evenSum = 0;
 //   for (let i = max; i >= min; i--) {
 //     console.log(i);
@@ -202,7 +218,7 @@ if (login === 'Адмін') {
 //   if (typeof a !== 'number' || typeof b !== 'number') {
 //     return 'Not a number!';
 //   }
-//   // return a < b ? a : b;
+//   // return a < b ? a : b;   // якщо ми маємо тільки два елемента
 //   return Math.min(a, b, c, d);
 // }
 
@@ -222,6 +238,11 @@ if (login === 'Адмін') {
 //   }
 //   return confirm('Ви неповнолітній. Підтверджуєте доступ?');
 // }
+
+// another variant:
+function isAdult(age) {
+  return age >= 18 || confirm();
+}
 
 // console.log(isAdult(20)); // true
 // console.log(isAdult(16)); // покаже діалог підтвердження
